@@ -328,7 +328,7 @@ All three have near-zero short-run substitutability.
 
         st.dataframe(
             top_nodes[["Node ID","Country","Sector","Risk %"]].style
-                .applymap(colour_risk, subset=["Risk %"])
+                .map(colour_risk, subset=["Risk %"])
                 .set_properties(**{"background-color":"#0b1520","color":"#c8dde8",
                                    "border-color":"#1a2d40","font-size":"11px"}),
             use_container_width=True, height=360,
